@@ -73,7 +73,7 @@ function Navbar({
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link to="/" className="flex items-center gap-2 text-xl font-bold text-emerald">
+        <Link to="/" className="flex items-center gap-2 text-xl font-bold text-lavender">
           <Activity className="h-6 w-6" aria-hidden="true" />
           <span>FitTrack</span>
         </Link>
@@ -83,7 +83,7 @@ function Navbar({
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-emerald"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-lavender"
             >
               {link.label}
             </a>
@@ -93,7 +93,7 @@ function Navbar({
         <div className="hidden md:block">
           <a
             href="#bmi"
-            className="inline-flex items-center justify-center rounded-full bg-emerald px-5 py-2.5 text-sm font-semibold text-emerald-foreground shadow-sm transition-all hover:bg-emerald-dark hover:shadow-md"
+            className="inline-flex items-center justify-center rounded-full bg-lavender px-5 py-2.5 text-sm font-semibold text-lavender-foreground shadow-sm transition-all hover:bg-lavender-dark hover:shadow-md"
           >
             Calculate BMI
           </a>
@@ -121,7 +121,7 @@ function Navbar({
               <a
                 key={link.href}
                 href={link.href}
-                className="text-base font-medium text-foreground transition-colors hover:text-emerald"
+                className="text-base font-medium text-foreground transition-colors hover:text-lavender"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
@@ -129,7 +129,7 @@ function Navbar({
             ))}
             <a
               href="#bmi"
-              className="mt-2 inline-flex items-center justify-center rounded-full bg-emerald px-5 py-2.5 text-sm font-semibold text-emerald-foreground"
+              className="mt-2 inline-flex items-center justify-center rounded-full bg-lavender px-5 py-2.5 text-sm font-semibold text-lavender-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
               Calculate BMI
@@ -148,12 +148,12 @@ function Hero() {
       className="relative overflow-hidden px-4 pb-20 pt-16 sm:px-6 sm:pt-24 lg:px-8 lg:pt-32"
     >
       <div className="absolute inset-0 -z-10">
-        <div className="absolute left-1/2 top-0 h-[40rem] w-[40rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-soft/60 blur-3xl" />
-        <div className="absolute bottom-0 right-0 h-[30rem] w-[30rem] translate-x-1/3 translate-y-1/3 rounded-full bg-emerald-soft/40 blur-3xl" />
+        <div className="absolute left-1/2 top-0 h-[40rem] w-[40rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-lavender-soft/60 blur-3xl" />
+        <div className="absolute bottom-0 right-0 h-[30rem] w-[30rem] translate-x-1/3 translate-y-1/3 rounded-full bg-lavender-soft/40 blur-3xl" />
       </div>
 
       <div className="mx-auto max-w-4xl text-center fade-in-up">
-        <div className="mb-6 inline-flex items-center rounded-full border border-emerald/20 bg-emerald-soft/50 px-4 py-1.5 text-sm font-medium text-emerald-dark">
+        <div className="mb-6 inline-flex items-center rounded-full border border-lavender/20 bg-lavender-soft/50 px-4 py-1.5 text-sm font-medium text-lavender-dark">
           <Heart className="mr-2 h-4 w-4" aria-hidden="true" />
           Simple. Modern. Made for your goals.
         </div>
@@ -168,14 +168,14 @@ function Hero() {
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
             href="#bmi"
-            className="inline-flex w-full items-center justify-center rounded-full bg-emerald px-8 py-3.5 text-base font-semibold text-emerald-foreground shadow-md transition-all hover:bg-emerald-dark hover:shadow-lg sm:w-auto"
+            className="inline-flex w-full items-center justify-center rounded-full bg-lavender px-8 py-3.5 text-base font-semibold text-lavender-foreground shadow-md transition-all hover:bg-lavender-dark hover:shadow-lg sm:w-auto"
           >
             <Calculator className="mr-2 h-5 w-5" aria-hidden="true" />
             Calculate BMI
           </a>
           <a
             href="#features"
-            className="inline-flex w-full items-center justify-center rounded-full border-2 border-emerald/30 bg-background px-8 py-3.5 text-base font-semibold text-emerald transition-all hover:border-emerald hover:bg-emerald-soft/50 sm:w-auto"
+            className="inline-flex w-full items-center justify-center rounded-full border-2 border-lavender/30 bg-background px-8 py-3.5 text-base font-semibold text-lavender transition-all hover:border-lavender hover:bg-lavender-soft/50 sm:w-auto"
           >
             Get Started
           </a>
@@ -228,10 +228,10 @@ function Features() {
             <a
               key={feature.title}
               href={feature.href}
-              className="group rounded-2xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:border-emerald/30 hover:shadow-lg fade-in-up"
+              className="group rounded-2xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:border-lavender/30 hover:shadow-lg fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-soft text-emerald transition-colors group-hover:bg-emerald group-hover:text-emerald-foreground">
+              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-lavender-soft text-lavender transition-colors group-hover:bg-lavender group-hover:text-lavender-foreground">
                 <feature.icon className="h-6 w-6" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-semibold text-card-foreground">
@@ -247,10 +247,10 @@ function Features() {
 }
 
 function getBMICategory(bmi: number) {
-  if (bmi < 18.5) return { label: "Underweight", color: "text-blue-600" };
-  if (bmi < 25) return { label: "Healthy", color: "text-emerald" };
-  if (bmi < 30) return { label: "Overweight", color: "text-amber-600" };
-  return { label: "Obese", color: "text-red-600" };
+  if (bmi < 18.5) return { label: "Underweight", color: "text-lavender-light" };
+  if (bmi < 25) return { label: "Healthy", color: "text-lavender" };
+  if (bmi < 30) return { label: "Overweight", color: "text-lavender" };
+  return { label: "Obese", color: "text-lavender-dark" };
 }
 
 function BMICalculator() {
@@ -277,8 +277,8 @@ function BMICalculator() {
     <section id="bmi" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-3xl">
         <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-lg fade-in-up">
-          <div className="bg-emerald-soft/50 px-6 py-10 text-center sm:px-12">
-            <div className="mx-auto mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald text-emerald-foreground">
+          <div className="bg-card px-6 py-10 text-center sm:px-12">
+            <div className="mx-auto mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-lavender text-lavender-foreground">
               <Calculator className="h-7 w-7" aria-hidden="true" />
             </div>
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
@@ -308,7 +308,7 @@ function BMICalculator() {
                     value={height}
                     onChange={(e) => setHeight(e.target.value)}
                     placeholder="e.g. 175"
-                    className="w-full rounded-xl border border-input bg-background px-4 py-3 text-foreground outline-none ring-offset-background transition-all placeholder:text-muted-foreground focus:border-emerald focus:ring-2 focus:ring-emerald/30"
+                    className="w-full rounded-xl border border-input bg-background px-4 py-3 text-foreground outline-none ring-offset-background transition-all placeholder:text-muted-foreground focus:border-lavender focus:ring-2 focus:ring-lavender/30"
                     required
                   />
                 </div>
@@ -327,21 +327,21 @@ function BMICalculator() {
                     value={weight}
                     onChange={(e) => setWeight(e.target.value)}
                     placeholder="e.g. 70"
-                    className="w-full rounded-xl border border-input bg-background px-4 py-3 text-foreground outline-none ring-offset-background transition-all placeholder:text-muted-foreground focus:border-emerald focus:ring-2 focus:ring-emerald/30"
+                    className="w-full rounded-xl border border-input bg-background px-4 py-3 text-foreground outline-none ring-offset-background transition-all placeholder:text-muted-foreground focus:border-lavender focus:ring-2 focus:ring-lavender/30"
                     required
                   />
                 </div>
               </div>
               <button
                 type="submit"
-                className="w-full rounded-full bg-emerald px-6 py-3.5 text-base font-semibold text-emerald-foreground shadow-md transition-all hover:bg-emerald-dark hover:shadow-lg"
+                className="w-full rounded-full bg-lavender px-6 py-3.5 text-base font-semibold text-lavender-foreground shadow-md transition-all hover:bg-lavender-dark hover:shadow-lg"
               >
                 Calculate BMI
               </button>
             </form>
 
             {result && (
-              <div className="mt-8 rounded-2xl border border-emerald/20 bg-emerald-soft/30 p-6 text-center fade-in-up">
+              <div className="mt-8 rounded-2xl border border-lavender/20 bg-card p-6 text-center fade-in-up">
                 <p className="text-sm font-medium uppercase tracking-wide text-muted-foreground">
                   Your BMI
                 </p>
@@ -385,7 +385,7 @@ function WhyFitTrack() {
                 "Enjoy a clean, distraction-free experience",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <span className="mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald text-emerald-foreground">
+                  <span className="mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-lavender text-lavender-foreground">
                     <svg
                       className="h-3 w-3"
                       fill="none"
@@ -406,11 +406,11 @@ function WhyFitTrack() {
             </ul>
           </div>
           <div className="relative fade-in-up" style={{ animationDelay: "150ms" }}>
-            <div className="absolute inset-0 rounded-3xl bg-emerald-soft/50 blur-2xl" />
+            <div className="absolute inset-0 rounded-3xl bg-lavender-soft/50 blur-2xl" />
             <div className="relative rounded-3xl border border-border bg-card p-8 shadow-xl sm:p-10">
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-soft text-emerald">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-lavender-soft text-lavender">
                     <Activity className="h-6 w-6" aria-hidden="true" />
                   </div>
                   <div>
@@ -419,7 +419,7 @@ function WhyFitTrack() {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-soft text-emerald">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-lavender-soft text-lavender">
                     <Flame className="h-6 w-6" aria-hidden="true" />
                   </div>
                   <div>
@@ -428,7 +428,7 @@ function WhyFitTrack() {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-soft text-emerald">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-lavender-soft text-lavender">
                     <TrendingUp className="h-6 w-6" aria-hidden="true" />
                   </div>
                   <div>
@@ -452,7 +452,7 @@ function Footer() {
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <Link
             to="/"
-            className="flex items-center gap-2 text-xl font-bold text-emerald"
+            className="flex items-center gap-2 text-xl font-bold text-lavender"
           >
             <Activity className="h-6 w-6" aria-hidden="true" />
             <span>FitTrack</span>
@@ -460,19 +460,19 @@ function Footer() {
           <nav className="flex flex-wrap items-center justify-center gap-6">
             <a
               href="#home"
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-emerald"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-lavender"
             >
               Home
             </a>
             <a
               href="#features"
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-emerald"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-lavender"
             >
               Features
             </a>
             <a
               href="#contact"
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-emerald"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-lavender"
             >
               Contact
             </a>
